@@ -23,13 +23,7 @@ const App = () => {
           component={TvShows}
           options={{title: 'TV Shows'}}
         />
-        <Tab.Screen
-          name="Details"
-          component={Details}
-          options={({route}) => ({
-            title: route.params.name,
-          })}
-        />
+        <Tab.Screen name="Details" component={Details} options={{title: ''}} />
       </Tab.Navigator>
     </NavigationContainer>
   );
